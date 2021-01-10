@@ -13,6 +13,6 @@ class Gdu < Formula
   end
 
   test do
-    system "#{bin}/gdu" "-v"
+    system "#{bin}/gdu", "-v"
   end
 end
