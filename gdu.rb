@@ -12,7 +12,7 @@ class Gdu < Formula
   end
 
   test do
-    assert_match "#{version}", shell_output("#{bin}/gdu -v")
+    assert_match version.to_s, shell_output("#{bin}/gdu -v")
     assert_match "colorized", shell_output("#{bin}/gdu --help 2>&1")
   end
 end
